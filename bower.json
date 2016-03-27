@@ -1,0 +1,27 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "Mert Dogar <mertdogar@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-animate": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angular-sanitize": "~1.4.8",
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1",
+    "moment": "~2.10.6",
+    "font-awesome": "*",
+  }
+}

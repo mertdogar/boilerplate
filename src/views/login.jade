@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title Boilerplate Login
+        meta(charset='UTF-8')
+        meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+        link(rel='styleSheet', href='/public/css/semantic/semantic.min.css')
+        link(rel='styleSheet', href='/public/css/login.css')
+        script(type='text/javascript').
+            API_URL = '#{API_URL}';
+            SITE_URL = '#{SITE_URL}';
+    body.login.dimmable
+        .ui.middle.aligned.center.aligned.grid
+            .column
+                h2.ui.teal.image.header
+                    .content Düşle Beşiktaş
+                form.ui.large.form
+                    .ui.stacked.segment
+                        .field
+                            .ui.left.icon.input
+                                i.user.icon
+                                input(type="text", name="email", placeholder="Mail Adresi")
+                        .field
+                            .ui.left.icon.input
+                                i.lock.icon
+                                input(type="password", name="password", placeholder="Parola")
+                        .ui.fluid.large.teal.submit.button Giriş
+                    .ui.error.message
+        script(src='/public/bower_components/jquery/dist/jquery.min.js')
+        script(src='/public/bower_components/semantic/dist/semantic.min.js')
+        script(src='/public/lib/login.js')

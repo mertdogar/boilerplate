@@ -1,0 +1,17 @@
+{
+  "http": {
+    "port": 3001,
+    "prefix": ""
+  },
+  "mongo": {
+    "host": "localhost",
+    "db": "boilerplate-default"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379
+  },
+  "log": "boilerplate.log",
+  "session-secret": "boilerplate-session-secret",
+  "cors": "*.boilerplate.com:*"
+}

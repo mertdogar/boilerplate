@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        title Boilerplate
+        meta(charset='UTF-8')
+        meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+
+        meta(name='description', content='#{meta.description}')
+        meta(name='keywords', content='#{meta.keywords}')
+        meta(name='author', content='Boilerplate Creator')
+        meta(name='content-language', content='tr')
+
+        meta(property='twitter:card', content='summary')
+        meta(property='twitter:site', content='#{meta.share.site}')
+        meta(property='twitter:title', content='#{meta.share.title}')
+        meta(property='twitter:creator', content='Boilerplate Creator')
+        meta(property='twitter:image', content='#{meta.share.image}')
+
+        meta(property='og:title', content='#{meta.share.title}')
+        meta(property='og:type', content='website')
+        meta(property='og:url', content='#{meta.share.site}')
+        meta(property='og:image', content='#{meta.share.image}')
+        meta(property='og:description', content='#{meta.share.description}')
+        meta(property='og:description', content='#{meta.share.description}')
+        meta(property='og:site_name', content='#{meta.title}')
+
+        link(rel='styleSheet', href='/public/css/style.css')
+        link(rel='styleSheet', href='/public/components/home/style.css')
+        link(rel='styleSheet', href='/public/bower_components/font-awesome/css/font-awesome.min.css')
+        base(href='/')
+    body.ng-cloak(ng-app='panel')
+        script.
+            __ENV_CONFIG__ = {
+                root: {
+                    api: '#{API_URL}',
+                    site: '#{SITE_URL}',
+                    plain_api: '#{API_URL_PLAIN}'
+                }
+            };
+        div(ng-class='{blur: blur}', class='mega-container')
+            ng-view
+            include ./scripts

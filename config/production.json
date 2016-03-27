@@ -1,0 +1,11 @@
+{
+    "http": {
+        "port": 3002
+    },
+    "mongo": {
+      "host": "localhost",
+      "db": "boilerplate-prod"
+    },
+    "SITE_URL": "http://boilerplate.com",
+    "API_URL": "http://boilerplate.com"
+}
